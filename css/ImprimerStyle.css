@@ -1,0 +1,89 @@
+
+html,body{margin: 0;padding: 0;font-family:Arial, Tahoma;}
+body{padding-top:170px;padding-bottom: 180px;}
+
+*{box-sizing: border-box;}
+
+
+/*********************************************************************************/
+
+
+
+
+.hederImprimer{width: 100%;background-color: white; position: fixed; top: 0px;padding-top: 10px;overflow: hidden}
+.hederImprimer > div {margin: auto ;width: 900px;}
+.hederImprimer .logo{height: 80px;background-image: url(../images/Logo.png);background-repeat: no-repeat;background-position: center;background-size: 100% 100%;}
+.hederImprimer h2 {width: 400px; margin: auto}
+
+.infoGlobal{width: 100%;display: flex;padding: 0px;border: 0.5px solid #000;overflow: hidden}
+.infoGlobal li {list-style: none;margin: 0px;width: 15%;border-left: 0.5px solid #000; padding: 7px ;font-family: sans-serif;font-weight: bold;display: inline-block;font-size: 90%;text-align: center;}
+.infoGlobal li:nth-child(even){font-size: 90%;font-weight: normal}
+
+
+
+
+
+
+
+
+.divImprimer{width: 100%;padding-top: 10px;padding-bottom: 10px}
+.infoImprimer{width: 900px;margin: auto ;}
+
+.infoImprimer table {width: 100%;border-collapse: collapse;margin-top: 30px;margin-bottom: 250px;}
+.infoImprimer table caption{margin-bottom: 10px;font-family: sans-serif;font-weight: bold;}
+.infoImprimer table tr,.infoImprimer table th,.infoImprimer table td{border: 1px solid #000;text-align: center}
+.infoImprimer table th{padding: 5px;font-size: 110% }
+.infoImprimer table td{font-weight: bold;padding: 5px}
+.infoImprimer table td textarea{font-weight: bold;resize:vertical;text-align: center;border: none;}
+
+
+
+
+
+
+
+
+
+.divCharge{width: 100%;height: 180px;background-color: white; position: fixed; bottom: 0px;padding-top: 10px;padding-bottom: 10px}
+.divCharge > div {margin: auto ;width: 900px;}
+.divCharge  table {width: 100%;border-collapse: collapse;margin-top: 10px;}
+.infoCharge {width: 100%;border: 0.5px solid #000;}
+.infoCharge tbody {width: 100%}
+.infoCharge tr {width: 100%}
+.infoCharge td , .infoCharge th {border: 0.25px solid #000;width: 50%;padding: 10px}
+.infoCharge td {height: 60px}
+
+.infoPage > div {width: 100%;display: flex;margin-top: 10px}
+.infoPage > div > div {display: inline-block ;width:33.3333%;text-align: center}
+.infoPage > div > div:nth-child(1),.infoPage > div > div:nth-child(2){padding-top: 5px}
+
+
+.hrefImpimer{text-align: right}
+.hrefImpimer A{ background-color:#83bcf3;color: white;border: none;border-radius: 5px;padding: 5px; font-size: 110%;cursor: pointer;text-decoration: none;display: inline-block}
+
+@media print
+{
+    .infoPage > div > .hrefImpimer{ display: none}
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {width: 10px;height: 10px;display: none}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+
+::-webkit-scrollbar-thumb {background: #0489B1;}
+
+::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+
+
+
+
+
+
+

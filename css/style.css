@@ -1,0 +1,374 @@
+/*********************************************/
+html{height: 100%;box-sizing: border-box;}
+body{margin:0;padding:0;font-family:sans-serif ,Tahoma;height: 100%;width: 100%;}
+/*********************************************/
+
+*{box-sizing: border-box;}
+
+/*********************************************/
+.App{position: relative;margin-left: 35px;width: calc(100% - 35px);height: 100%}
+/*********************************************/
+
+
+/********************Navigztion*************************/
+.navigation{background-color: #83bcf3;color:white;width: 35px;position: fixed;height: 100%;display: inline;top: 0px;z-index:99}
+.ulNav{display: none;}
+.ulNav{list-style:none;margin: 0px;padding: 0px;margin-top: 30px ;}
+.ulNav li{ display:block;cursor: pointer;margin-top: 10px;transition-property: border,background;transition-duration: 0.4s;border-left: 5px solid transparent;}
+.ulNav li a{width: 100%;color: white;;padding: 0;margin: 0;border:none ;background: none;cursor: pointer;text-align: left;}
+.ulNav li a{text-decoration: none;width: 100%;color: white;padding: 0;margin: 0;border:none ;background-color: transparent;display: inline-block;padding: 5px;font-size: 150%;font-weight: bold;font-family: sans-serif}
+.ulNav li:hover{ background:#0489B1;border-left: 5px solid white;}
+
+.ulNavIcon{list-style: none;margin: 0px;padding: 0px;margin-top: 5px}
+.ulNavIcon li{text-align: center;}
+.ulNavIcon li a {background-repeat: no-repeat;background-size: 80%;background-position: center;width: 29px;height: 29px;display: inline-block}
+.ulNavIcon li a:hover{background-color:#0489B1;background-size: 90%}
+.ulNavIcon li:nth-child(1) a {background-image: url(../images/icons/home.png);}
+.ulNavIcon li:nth-child(2) a {background-image: url(../images/icons/message.png);background-size: 70%}
+.ulNavIcon li:nth-child(3) a {background-image: url(../images/icons/file.png);}
+.ulNavIcon li:nth-child(4) a {background-image: url(../images/icons/settings.png);}
+.ulNavIcon li:nth-child(5) a {background-image: url(../images/icons/help.png);}
+.ulNavIcon li:nth-child(6) a {background-image: url(../images/icons/Dec.png);}
+
+.MenuHideShow{width: 30px;height: 30px;background-image: url(../images/icons/menu-4-64.png);background-repeat: no-repeat;background-position: center;background-size: 80%;margin: 2px;background-color: #0489B1;border: none;cursor: pointer;}
+.MenuHideShow:hover{background-color:#b4dce8}
+/*********************************************/
+
+
+/**********************header***********************/
+.header{background:#0489B1;margin: 0px;display: flex;padding: 5px;margin-left: 35px;position: fixed;top: 0px;z-index: 4;box-sizing: border-box;width:calc(100% - 35px)}
+.header >div {display: block}
+.infoApp{width: 50%;color:#FFF;}
+.infoApp ul{list-style: none;margin: 0;padding: 0;display: flex}
+.infoApp ul li {font-size: 150%;font-weight: bold;font-family: sans-serif}
+.infoApp .iconApp{width: 25px;height: 25px;background-image: url(../images/GestionIcon.png);background-repeat: no-repeat;background-size: contain;background-position: center;border-radius: 3px;;background-color: white;display: block}
+.infoApp .nameApp{padding: 0;margin-top:7px;margin-left: 5px; font-weight: bold;font-family: sans-serif;font-size: 85%}
+
+
+.infoProfil{width: 50%;text-align: right;}
+.infoProfil ul{list-style: none;margin: 0;padding: 0;}
+.infoProfil ul li  {color:#FFF;margin-left: 10px;float: right;display: inline !important}
+.infoProfil .photo{ width: 25px;height: 25px;display: block;border-radius: 100%;background-color: white;background-image: url(../images/User.png);background-repeat: no-repeat;background-size: contain;background-position: center}
+.infoProfil .name{padding: 0;margin-top:7px; font-weight: bold;font-family: sans-serif;font-size: 85%}
+.infoProfil .Dec{width: 16px;height: 16px;display: inline-block;margin-top: 5px;background-image: url(../images/icons/Dec.png);background-repeat: no-repeat;background-size: 100%;background-position: center}
+/*********************************************/
+
+
+
+/*********************footer************************/
+.footer{clear: both;background:#0489B1;color:#FFF;text-align:center;padding:10px 0;font-size: 50%;position: fixed;bottom: 0px;width: 100%;z-index: 10}
+/*********************************************/
+
+
+
+
+/********************Accueil menu*************************/
+.MainMenu{text-align:center}
+
+.MainMenu a {text-decoration: none;width: 350px;color:white;margin: 1%;cursor: pointer;border:none;border-radius: 5px;font-size: 130% ;font-weight: bold;display: inline-block;padding: 10px}
+#Equipemment{background-color: #acec00}
+#InstallationLc{background-color: #ef3c79}
+#ParcLogistifue{background-color: #ba65c9}
+#Consemmeble{background-color: #00bbd6}
+
+
+.page_Maintenance{position: absolute; top:30%;margin: auto;display: none;background-image: url(../images/icons/en_cours_construction.png);background-repeat: no-repeat;background-size: cover;background-position: center;font-size: 150% ;font-weight: bold;width: 99%;height: 300px;background-color: white;text-align: right;border-radius: 10px;border: 2px solid #0489B1;z-index: 20}
+.exitMaintenance{width: 40px;height: 40px;border: none;font-size: 150%;background-color: yellow;border-radius: 5px;margin: 10px}
+.exitMaintenance:hover{background-color: #0489B1;color: white}
+/*********************************************/
+
+
+/*******************main**************************/
+.main{width: 100%;height: 100%;}
+.main .content{width: 100%;height: 100%;overflow: auto}
+/*********************************************/
+
+
+
+/******************************   Page Commande   ***********************************************************************************************************************/
+
+/*********************Paner************************/
+.Panier{position: relative;position: absolute;top: 0;right: 0}
+.Panier .iconPanier{width: 40px;height: 40px;background-image: url(../images/icons/Panier.png);background-repeat: no-repeat;background-position: center;background-size: contain;margin: 6px;display: inline-block;position: relative;cursor: pointer}
+.Panier .iconPanier span{border-radius: 100%;background-color: red;color: white;position: absolute;padding: 3px; top:0px;left: 0px;font-weight: bold;font-size: 60%;}
+.infoPanier{width: 300px;position: absolute;top: 60px;right: 7px;z-index: 5;display: none}
+.infoPanier .listPruduit {width: 100%;height: 100%;background-color: #83bcf3;position: relative;border-radius: 5px;padding-top: 5px}
+.infoPanier .listPruduit span {width: 15px;height: 15px;background-color: #83bcf3;position: absolute;top: -6px;right: 10px;transform:rotate(30deg) skewY(30deg);}
+.infoPanier .listPruduit h4{margin: 7px;color: white;}
+.infoPanier .listPruduit h5{margin: 10px;color: white;text-align: center;display: none}
+
+.listPruduit ul {margin: 0;padding: 0;list-style: none;width: 100%;overflow: auto;max-height: 400px;margin-bottom: 10px}
+.listPruduit ul li  {list-style: none;height: 55px;background-color: #0489B1;margin:7px;border-radius: 3px;display: flex}
+.listPruduit ul li img {width: 45px;height: 45px;background-color: white;margin: 5px;border-radius: 2px}
+.listPruduit ul li div {display: inline-block}
+.listPruduit ul li div .nameitems {display: block;width: 100px;height: 55%;color: white;font-size: 70%;padding: 5px;overflow: hidden}
+.listPruduit ul li div .price{display: block;width: 40px;color: #FFFF00;font-size: 70%;padding-left: 5px;font-weight: bold}
+.listPruduit ul li div{width: inherit}
+.listPruduit ul li div .action{height: 55%;padding: 5px;display: block;width: 111px}
+.listPruduit ul li div .action .Pquantite{width: 40px;font-weight: bold;border: none;border-radius: 2px;padding: 3px;color: #5eabea;display: inline}
+.listPruduit ul li div .action input[type='button'] {width: 20px;height: 20px;display: inline-block;border-radius: 3px;float: right;margin-left: 5px;border: none;background-repeat: no-repeat;background-size: 60%;background-position: center;cursor: pointer}
+.deleteP{background-color: #F78181;background-image: url(../images/icons/delete.png)}
+.deleteP:hover{background-color:#FA5858;}
+.refreshP{background-color: #83bcf3;background-image: url(../images/icons/refresh.png)}
+.refreshP:hover{background-color:#5da8f1;}
+.listPruduit ul li div .subotal{color: white;font-size: 70%;font-weight: bold;display: block;padding-left: 5px}
+/*********************************************/
+
+
+
+/********************* tab menu************************/
+.tab {background-color: #83bcf3;width: 100%;display: flex}
+.tab > button {background-color: inherit;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 5px 8px;transition: 0.3s;font-size: 95%;font-weight: bold}
+.tab > button:hover {background-color: #0489B1;}
+.tab > button.active {background-color: white;color: #0489B1;padding-left: 15px;padding-right: 15px}
+.tabcontent {display: none;border-top: none;position: relative;}
+
+
+
+
+
+
+.Intab {background-color: #0489B1;display: flex}
+.Intab button {background-color: inherit;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 5px 8px;transition: 0.3s;font-size: 80%;position:relative;font-weight: bold}
+
+.Intab button.active{padding-right: 15px;padding-left: 15px;}
+.Intab button:first-child.active {padding-left: 8px}
+.Intab button:hover {background-color: #0489B1;}
+.Intab button.active {background-color: white;color: #0489B1;}
+.Intab button.active:before {content: '';height: 100%;width: 10px;position: absolute;top: 0px;right: 0px;background-color: #0489B1;border-bottom-left-radius: 10px}
+.Intab button:last-child.active:after {content: '';height: 100%;width: 10px;position: absolute;top: 0px;left: 0px;background-color: #0489B1;border-bottom-right-radius: 10px}
+.Intabcontent {display: none;border-top: none;position: relative;}
+
+/*********************************************/
+
+
+
+/*********************************************/
+.divSelect{text-align: center;width: inherit;padding-top: 40px;}
+.divSelect >div {width:280px;margin: 20px;display: inline-block;}
+.divSelect >div label {color: #054375 ;font-size: 100%;font-weight: bold;width: 100%}
+.selectCommande{width: 100%;background: #5eabea;color:#fff;padding:7px;font-size: 105%;box-shadow: 0 5px 25px rgba(0,0,0,.5);-webkit-appearance:button;outline: none;border: none;border-radius: 5px;cursor: pointer}
+.box{position: relative;margin-top: 10px}
+.box:before {content: '';position: absolute;top:0;right: 0; width: 30px;height: 100%;background: #5eabea;background-image: url(../images/icons/drop.png);background-size: 55%;background-repeat: no-repeat;background-position: center;pointer-events: none;border-bottom-right-radius: 5px;border-top-right-radius: 5px;}
+.box:hover:before {background-color: #0563af;cursor: pointer}
+.selectCommande option {}
+
+#Designation option:disabled {background-color: black;}
+
+
+/*********************************************/
+
+
+
+/*********************************************/
+.InfoProduit{text-align: center;margin-top: 40px;}
+
+.InfoProduit .contentInfo{text-align: left;padding: 20px;display: inline-block;box-shadow: 0 5px 25px rgba(0,0,0,.5);border-radius: 10px ;}
+
+.InfoProduit .contentInfo >div {width: 250px;float: left; }
+.info > div{margin-bottom: 10px }
+.info > div label:first-child {width: 20%;display: inline-block;color: #054375 ;font-size: 100%;font-weight: bold;margin-right: 6px;min-width: 100px}
+.qt{width: 50px;border: none;border-bottom: 2px solid #054375;padding: 3px;color: #69b2f7;font-size: 120% }
+.info div .display{width: 20%;color:#69b2f7;font-size: 150%;font-weight: bold}
+.info div input[type="button"]{ background-color:#054375;color: white;border: none;border-radius: 4px;padding: 5px;width: 55%;white-space:pre-line;cursor: pointer}
+.info div input[type="button"]:hover{background-color: #69b2f7} 
+.center{text-align: center;margin-top: 30px}
+
+.imageDesignation .photoDS {}
+
+/*********************************************/
+
+
+
+/*********************************************/
+.Validation{text-align: center;margin-top: 40px}
+.Validation >div{margin: auto;max-width: 80%;}
+.delai >label{width: 333px;display: block;color: #054375 ;font-size: 110%;font-weight: bold;}
+.delai{text-align: left}
+
+.delai div {text-align: center;margin-top: 10px}
+.delai div div{float: left;min-width: 100px;border-radius: 8px}
+.delai div div label{color:#69b2f7 ;font-size: 100%;font-weight: bold;cursor: pointer;margin-right: 30px}
+.delai div div input[type="radio"]{cursor: pointer;margin: 0px;margin-right: 5px}
+.delai{text-align: left}
+
+
+.both{clear: both}
+
+.Validation .Validation-submit{text-align: right;margin-top: 30px}
+
+.Validation-submit input[type="button"]{background-color:#054375;color: white;border: none;border-radius: 4px;padding: 8px;white-space:pre-line;cursor: pointer;box-shadow: 0 5px 25px rgba(0,0,0,.5);margin: 5px;width: 150px}
+.Validation-submit input[type="button"]:hover{background-color: #69b2f7}
+
+.Validation-submit input[type="button"]:disabled{background-color: darkgray;color: white;cursor: none}
+
+
+
+
+
+/******************************   Page Show Commande ***********************************************************************/
+#txtsearsh{width: calc(100% - 20px);padding:10px;display: block;font-size: 120%;border: none}
+
+.tableCommande{width: 100%;zoom:90%}
+.tableCommande th {background-color: #69b2f7;border-right: 2px solid white;color: white;position: relative}
+.tableCommande > thead th:last-child {border-right: none}
+.tableCommande td, .tableCommande th { text-align: left;text-align: center;font-family: sans-serif;cursor: default}
+.tableCommande tr:nth-child(even) {background-color: #f2f2f2;}
+.tableCommande table tr:nth-child(even) {background-color: transparent;}
+.tableCommande { border-collapse: collapse;width: 100%;}
+.tableCommande th {padding: 15px;}.tableCommande td{padding: 0}
+.tableCommande td{font-family:monospace;min-height: 100px}
+.tableCommande tr{height: 50px;cursor: pointer}.tableCommande table tr{height: auto}
+
+.tableCommande th #detai{position: absolute;top: 10px;right: 10px;border: none;color: white;font-size: 160%;background-color: transparent;cursor: pointer}
+
+.tableCommande table  {border-collapse: collapse;display: grid;margin: 0;display: none}
+
+.tableCommande table{margin-bottom: 10px;margin-top: 10px}
+.tableCommande table td ,.tableCommande table th{width: 100%;border: 0.5px solid #c1bfbf;background-color: white;}
+
+.tableCommande table th{color:#83bcf3 }.tableCommande table td{font-family: monospace}
+.tableCommande table caption{padding: 10px;font-weight: bold;font-family: monospace;text-align: left;font-size: 110%}
+
+
+.validateColumn{min-width: 200px;}
+.tableCommande td a {text-decoration: none;color: black;}
+.tableCommande td .checked{color:darkturquoise;}
+.tableCommande td label:hover {cursor: pointer}
+.tableCommande .imprime {padding: 10px}
+.tableCommande .imprime input{background-color:#83bcf3;color: white;border: none;padding: 5px; border-radius: 4px;font-size: 120%;cursor: pointer}
+
+.tableCommande .imprime input:disabled{background-color:gray;color: gainsboro;cursor: none}
+.tableCommande .conferm {}
+.tableCommande .conferm input{background-color:#83bcf3;color: white;border: none;padding: 5px; font-size: 120%;cursor: pointer;margin: 5px}
+
+.tableCommande input[type="number"]{width: 60px;padding-left: 5px}
+
+.tableCommande label {font-family: fantasy;font-weight: normal}
+
+
+
+/**************************************************************************************************/
+.dialog-Annuler,.dialog-confirm,.dialog-Chefconfirm {z-index: 100;position: fixed;left: 0;top: 0;height: 100%;width: 100%; background-color: rgba(0, 0, 0, 0.7);display: none}
+.dialog-container {z-index: 50;position: relative;top: 25%;width: 325px;margin: 4em auto;background: #FFF;text-align: center;border-radius: 2px;overflow: hidden;padding: 7px;padding-top: 0px}
+.hideAnnuler,.hideConfirm,.hideChefconfirm {text-align: right;}
+.hideAnnuler button,.hideConfirm button,.hideChefconfirm button{background: none;border: none;font-weight: bold;font-size: 140%;cursor: pointer;color: #0489B1;padding: 0px}
+.dialog-container h4 {}
+.btnAnnuler,.btnConfirm,btnChefconfirm{}
+.btnAnnuler button,.btnConfirm button,.btnChefconfirm button {width: 140px;border: none;color: white;background-color: aqua;margin: 5px;padding: 15px;background-color: #69b2f7 ;cursor: pointer;font-weight: bold;}
+.btnAnnuler button:hover,.btnConfirm button:hover,.btnChefconfirm button:hover{background-color: #0489B1 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** slider ********************************/
+.SliderMain{margin: auto;width: 100%;height: 450px;position: relative;}
+.infoSL{width: 250px;height: 150px;background-color: rgba(0, 0, 0, 0.4);position: absolute;bottom:80px;left: 10%;border-radius: 20px;transition-property: transform,left;transition-duration: 2s;}
+.infoSL h5{color: white;margin: 30px;font-family: sans-serif;font-size: 120%}
+.infoSL h6{color: white;margin: 30px;font-family: sans-serif;text-align: center;opacity: 0.8;font-size: 120%}
+
+.Slider{margin: auto;width: 100%;height: 100%;position: relative;text-align: center;background-color: black}
+.SL{ margin: auto;width: 100%;height: 100%; position: absolute;background-repeat: no-repeat;background-size: 100% 100%;background-position: center;
+transition-property:transform,opacity,width,height,left,top; transition-duration: 0.5s;transition-timing-function: ease;}
+
+
+
+
+/***************************** Parametres ********************************/
+
+
+.param_panel{width: 450px;margin: 10px auto;padding: 30px}
+.title{padding-bottom: 25px;padding-top: 40px}
+.LBparam{font-size: 180%;font-weight: bold;font-family: sans-serif;color: #29ABE2;}
+.param_panel > div {margin: 6px;width: 100%;margin: auto;}
+.param_panel input[type="text"],.param_panel input[type="password"]{ border: none;left: 30%;width: 100%;padding: 7px;font-family: sans-serif;color: #29ABE2;font-size: 110%;border-bottom: thin solid #29ABE2;margin-bottom: 15px;background-size: 35px;background-position: left;background-repeat: no-repeat;padding-left: 55px;background-color: white;box-sizing: border-box;border-radius: 4px}
+.param_panel input[type="submit"]{width: 100%;height: 45px;margin: auto;border: thin solid #29ABE2;transition: 0.1s ease-in-out;margin-bottom: 20px;font-size: 130%;color: #29ABE2;border-radius: 4px;background-color: white;cursor: pointer}
+.param_panel input::placeholder{opacity: 0.5;}
+.paramname{background-image: url(../images/icons/Contacts_64px.png);}
+.parampsw , .paramCpsw{background-image: url(../images/icons/Lock_64px.png);}
+.param_panel input[type="submit"]:hover{color: white;background-image:  linear-gradient(-90deg, #1f6abb,white);border:none}
+
+
+    
+.check {display: block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;user-select: none;color: #BABABA;margin-left: 5px;font-size: 100%;font-family: sans-serif;font-weight: bold;padding-top: 5px}
+
+.check input[type="checkbox"] {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+
+.checkmark {position: absolute;top: 0;left: 0; height: 25px;width: 25px;background-color: #eee;border-radius: 3px}
+
+.check:hover input ~ .checkmark {background-color: #ccc;}
+
+.check input[type="checkbox"]:checked ~ .checkmark {background-color: #29ABE2;}
+
+.checkmark:after {content: "";position: absolute;display: none;}
+
+.check input[type="checkbox"]:checked ~ .checkmark:after {display: block;}
+
+.check .checkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid white;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************/
+
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+    #COM{zoom:80%}
+    
+}
+::-webkit-scrollbar {width: 10px;height: 10px;}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+
+::-webkit-scrollbar-thumb {background: #0489B1;}
+
+::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+
+@media only screen and (max-width: 500px) {
+    ::-webkit-scrollbar {width: 2px;height: 2px;}
+
+    ::-webkit-scrollbar-track {background: #f1f1f1;}
+
+    ::-webkit-scrollbar-thumb {background: #0489B1;}
+
+    ::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+}
+    
+    
+ 
+

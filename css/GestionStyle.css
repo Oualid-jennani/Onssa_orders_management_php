@@ -1,0 +1,169 @@
+body{margin: 0px; padding: 0px;font-family:Arial, Tahoma}
+
+*{box-sizing: border-box;}
+
+.content{}
+/*********************************************/
+
+
+/**********************header***********************/
+.header{background:#0489B1;margin: 0px;position: fixed;top: 0px;z-index: 4;width:100%;}
+.infoHeader{width: 100%;display: flex;padding: 5px}
+
+.infoApp{width: 50%;color:#FFF;}
+.infoApp ul{list-style: none;margin: 0;padding: 0;display: flex}
+.infoApp ul li {display: inline-grid;}
+.infoApp .iconApp{width: 30px;height: 30px;background-image: url(../images/icons/admin.png);background-repeat: no-repeat;background-size: 90%;background-position: center;border-radius: 3px;;background-color: white;display: block}
+.infoApp .nameApp{padding: 7px;margin-left: 5px; font-weight: bold;font-size: 95%}
+
+.infoProfil{width: 50%;text-align: right;}
+.infoProfil ul{margin: 0;padding: 0;}
+.infoProfil ul li  {display: grid;color:#FFF;margin-left: 10px;float: right}
+.infoProfil .photo{ width: 30px;height: 30px;border-radius: 100%;background-color: white;background-image: url(../images/icons/Magasinier.png);background-repeat: no-repeat;background-size: contain;background-position: center}
+.infoProfil .name{padding-top: 7px;font-size: 105%;font-weight: bold}
+.infoProfil .dec{width: 20px;height: 20px;display: inline-block;margin-top: 5px;background-image: url(../images/icons/Dec.png);background-repeat: no-repeat;background-size: 100%;background-position: center;background-color: transparent;border: none;cursor: pointer}
+
+.infoMagasin{width: 100%;color: white;background-color: #83bcf3;display: block;text-align: center;overflow: hidden;padding: 10px}
+.infoMagasin h5 {display: inline;}
+.infoMagasin h4 {display: inline;}
+/**********************header***********************/
+
+
+
+
+
+/********************* tab menu************************/
+.tab {background-color: #83bcf3;width: 100%;display: flex;border-top: 2px solid #83bcf3}
+.tab > button {background-color: inherit;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 5px 8px;transition: 0.3s;font-size: 95%;font-weight: bold}
+.tab > button:hover {background-color: #0489B1;}
+.tab > button.active {background-color: white;color: #0489B1;padding-left: 15px;padding-right: 15px}
+.tabcontent {display: none;border-top: none;position: relative;}
+
+
+
+
+/******************************   Page Show Commande   ***********************************************************************************************************************/
+.tableCommande{width: 100%;zoom:90%}
+.tableCommande th {background-color: #69b2f7;border-right: 2px solid white;color: white;position: relative}
+.tableCommande > thead th:last-child {border-right: none}
+.tableCommande td, .tableCommande th { text-align: left;text-align: center;font-family: sans-serif;cursor: default}
+.tableCommande tr:nth-child(even) {background-color: #f2f2f2;}
+.tableCommande table tr:nth-child(even) {background-color: transparent;}
+.tableCommande { border-collapse: collapse;width: 100%;}
+.tableCommande th {padding: 15px;}.tableCommande td{padding: 0}
+.tableCommande td{font-family:monospace;min-height: 100px;vertical-align: middle}
+.tableCommande tr{height: 50px;cursor: pointer}.tableCommande table tr{height: auto}
+
+.tableCommande th #detai{position: absolute;top: 10px;right: 10px;border: none;color: white;font-size: 160%;background-color: transparent;cursor: pointer}
+
+.tableCommande table  {border-collapse: collapse;display: grid;margin: 0;display: none}
+
+.tableCommande table{margin-bottom: 10px;margin-top: 10px}
+.tableCommande table td ,.tableCommande table th{width: 100%;border: 0.5px solid #c1bfbf;background-color: white;}
+.tableCommande table td {}
+
+
+.tableCommande table td{font-family: monospace;}
+
+
+.tableCommande table th{color:#83bcf3 }
+.tableCommande table caption{padding: 10px;font-weight: bold;font-family: monospace;text-align: left;font-size: 110%}
+
+
+.validateColumn{min-width: 200px;}
+.tableCommande td a {text-decoration: none;color: black;}
+.tableCommande td .checked{color:darkturquoise;}
+.tableCommande td label:hover {cursor: pointer}
+.tableCommande .imprime {padding: 10px}
+.tableCommande .imprime input{background-color:#83bcf3;color: white;border: none;padding: 5px; border-radius: 4px;font-size: 120%;cursor: pointer}
+
+.tableCommande .imprime input:disabled{background-color:gray;color: gainsboro;cursor: none}
+.tableCommande .conferm {}
+
+.tableCommande .inpChefPass input{background-color:#34ec64;color: white;border: none;padding: 8px; font-size: 120%;cursor: pointer;margin: 5px}
+.tableCommande .inpChefPass input:hover{background-color: #2ec355;border-radius: 5px}
+
+.tableCommande .inpNewChefPass input{background-color:#ff6767;color: white;border: none;padding: 8px; font-size: 120%;cursor: pointer;margin: 5px}
+.tableCommande .inpNewChefPass input:hover{background-color: #f94444;border-radius: 5px}
+
+
+
+
+.tableCommande input[type="number"]{width: 60px;padding-left: 5px}
+
+.tableCommande label {font-family: fantasy;font-weight: normal}
+
+
+
+/**************************************************************************************************/
+.dialog-Annuler,.dialog-confirm,.dialog-PassChef,.dialog-New-PassChef {z-index: 50;position: fixed;left: 0;top: 0;height: 100%;width: 100%; background-color: rgba(0, 0, 0, 0.7);display: none}
+.dialog-container {z-index: 50;position: relative;top: 25%;width: 325px;margin: 4em auto;background: #FFF;text-align: center;border-radius: 2px;overflow: hidden;padding: 7px;padding-top: 0px}
+.hideAnnuler,.hideConfirm,.hidePassChef,.hideNewPassChef {text-align: right;}
+.hideAnnuler button,.hideConfirm button,.hidePassChef button,.hideNewPassChef button{background: none;border: none;font-weight: bold;font-size: 140%;cursor: pointer;color: #0489B1;padding: 0px}
+.dialog-container h4 {}
+.btnAnnuler,.btnConfirm,btnPassChef,btnNewPassChef{}
+.btnAnnuler button,.btnConfirm button,.btnPassChef button,.btnNewPassChef button  {width: 140px;border: none;color: white;background-color: aqua;margin: 5px;padding: 15px;background-color: #69b2f7 ;cursor: pointer;font-weight: bold;}
+.btnAnnuler button:hover,.btnConfirm button:hover,.btnPassChef button:hover,.btnNewPassChef button:hover{background-color: #0489B1 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formGestion div {display: inline-block}
+
+
+
+
+.NewVersion{margin-bottom: 10px;margin-top: 10px;}
+
+.NewVersion .BtnVersion{background-color:#83bcf3;color: white;border: none;padding: 5px; border-radius: 4px;font-size: 120%;cursor: pointer;margin: 5px;}
+.NewVersion .inpVersion{padding: 4px;font-size: 110%;margin: 5px;border: 1px solid #83bcf3;border-radius: 3px}
+
+#txtsearsh{width: 100%;padding:10px;display: block;font-size: 120%;border: none}
+
+
+.NewVersion .error{border: 2px solid red};
+
+
+
+
+
+
+
+
+
+    
+::-webkit-scrollbar {width: 10px;height: 10px;}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+
+::-webkit-scrollbar-thumb {background: #0489B1;}
+
+::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+
+@media only screen and (max-width: 500px) {
+    ::-webkit-scrollbar {width: 2px;height: 2px;}
+
+    ::-webkit-scrollbar-track {background: #f1f1f1;}
+
+    ::-webkit-scrollbar-thumb {background: #0489B1;}
+
+    ::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+}
+    
+    
+
+

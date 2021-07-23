@@ -1,0 +1,202 @@
+html{height: 100%;box-sizing: border-box;overflow: auto}
+body{margin:0;padding:0;font-family:Arial, Tahoma;height: 100%;width: 100%;overflow: auto}
+
+
+
+/***** Menu aside Foote mainr*********/
+
+*{box-sizing: border-box;}
+.main::after {content: "";clear: both;display: table;}
+.menu,.contain,.info {float: left;padding: 10px;}
+.contain{}
+.contain >div{display: none}
+
+
+/**********************header***********************/
+.header{background:#0489B1;margin: 0px;position: fixed;top: 0px;z-index: 4;width:100%;}
+.infoHeader{width: 100%;display: flex;padding: 5px}
+
+.infoApp{width: 50%;color:#FFF;}
+.infoApp ul{list-style: none;margin: 0;padding: 0;display: flex}
+.infoApp ul li {display: inline-grid;}
+.infoApp .iconApp{width: 30px;height: 30px;background-image: url(../images/icons/admin.png);background-repeat: no-repeat;background-size: 90%;background-position: center;border-radius: 3px;;background-color: white;display: block}
+.infoApp .nameApp{padding: 7px;margin-left: 5px; font-weight: bold;font-size: 95%}
+
+.infoProfil{width: 50%;text-align: right;}
+.infoProfil ul{margin: 0;padding: 0;}
+.infoProfil ul li  {display: grid;color:#FFF;margin-left: 10px;float: right}
+.infoProfil .photo{ width: 30px;height: 30px;border-radius: 100%;background-color: white;background-image: url(../images/icons/Magasinier.png);background-repeat: no-repeat;background-size: contain;background-position: center}
+.infoProfil .name{padding-top: 7px;font-size: 105%;font-weight: bold}
+.infoProfil .dec{width: 20px;height: 20px;display: inline-block;margin-top: 5px;background-image: url(../images/icons/Dec.png);background-repeat: no-repeat;background-size: 100%;background-position: center;background-color: transparent;border: none;;cursor: pointer}
+
+.infoMagasin{width: 100%;color: white;background-color: #83bcf3;display: block;text-align: center;overflow: hidden;padding: 10px}
+.infoMagasin h5 {display: inline;}
+.infoMagasin h4 {display: inline;}
+/**********************header***********************/
+
+
+
+
+.menu ul {list-style-type: none;margin: 0;padding: 0;}
+
+.menu li {padding: 8px;margin-bottom: 7px;background-color: #83bcf3;color: #ffffff;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 0px 6px rgba(0,0,0,0.24);cursor: pointer;font-weight: bold}
+
+.menu ul .active{background-color: #226aa5;}
+
+.menu li:not(.active):hover {background-color: #6392a0;}
+
+.aside {background-color: white;padding: 10px;color: #ffffff;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+
+.footer {background-color: #0489b1;color: #ffffff;text-align: center;font-size: 10px;width: 100%;position: fixed;bottom: 0;z-index: 10}
+
+.tabcontent{width: 100%;}
+
+/***** Menu aside Footer*********/
+
+
+
+
+
+
+
+
+
+
+.Intab {width: 100%;display: flex;margin-bottom: 20px}
+.Intab > button {background-color: inherit;color: #0489b1;float: left;border: none;outline: none;cursor: pointer;padding: 4px 6px;transition: 0.3s;font-size: 95%;font-weight: bold;width: 50%;border-bottom: 1px solid #0489b1 }
+.Intab > button:hover {background-color: #00c5ff;color: white}
+.Intab > button.active {background-color: #0489b1;color: white;padding-left: 15px;padding-right: 15px}
+.Intabcontent {display: none;border-top: none;position: relative;}
+
+
+
+#ADmagasin{padding-top: 5px;padding-bottom:5px;width: 100%;font-weight: bold;margin-top: 5px;margin-bottom: 10px;background-color: white;color: #1f4467;border: none;border-bottom: 2px solid black;cursor: pointer}
+#ADmagasin:hover{border-bottom: 2px solid #7ec5da }
+#ADmagasin option {background-color: #1f4467;color: white;padding: 5px; font-weight: bold}
+
+.aside div input{width: 100%;padding: 5px ;border: none ; ;border-radius: 5px; margin-bottom: 7px;background-color: #226aa5;color: #ffffff;cursor: pointer;font-weight: bold;text-align:left;font-size: 110%}
+
+.aside div input:hover {background-color: #7ec5da;}
+
+
+
+/*************************************************************************************************************************/
+
+#AjouterClient,#AjouterChefs,#AjouterGest,#AjouterMagas,#AjouterAdmin,#AjouterServices{ width: 50%;background-color: #226aa5; color: white;border: none;padding: 5px;border-radius: 2px;cursor: pointer;font-size: 90%;font-weight: bold;padding-left: 30px;background-repeat: no-repeat;background-position:5px ;background-size: 20px;background-image: url(../images/icons/add.png)}
+#AjouterClient:hover,#AjouterChefs:hover,#AjouterGest:hover,#AjouterMagas:hover,#AjouterAdmin:hover,#AjouterServices:hover{background-color:#054375; }
+
+.txtsearsh{width: 50%;padding:5px;font-size: 90%;border: none;padding-left: 30px;background-repeat: no-repeat;background-position: 5px;background-size: 20px;background-image: url(../images/icons/search.png)}
+
+
+.tabcontent .Action {padding: 4px;background-color: #69b2f7;color: white;text-align: right;}
+
+/*******************************************Table*********************************************/
+
+.divTable{width: 100%;overflow: auto}
+
+.tableAdmin { border-collapse: collapse;width: 100%;border-top: none;}
+.tableAdmin > thead th {color: white;background-color: #0489b1;position: relative;padding: 10px;font-size: 90%;font-weight: bold}
+
+.tableAdmin > thead th {border-right: 1px solid white;border-top: 1px solid white;}
+.tableAdmin > thead th:last-child {border-right: none}
+
+.tableAdmin td, .tableAdmin th {text-align: center;}
+.tableAdmin tbody > tr td{font-weight: bold;font-size: 75%;}
+#tabClient tbody tr:not(.selected):hover,#tabChefs tbody tr:not(.selected):hover,#tabGest tbody tr:not(.selected):hover,#tabMagas tbody tr:not(.selected):hover,#tabAdmin tbody tr:not(.selected):hover,#tabServices tbody tr:not(.selected):hover{background-color: #f2f2f2;}
+
+.tableAdmin tbody .btnEdit,.tableAdmin tbody .btnDelete{width: 25px;height: 25px;border: none;padding: 5px;margin: 3px; border-radius: 2px;cursor: pointer;font-weight: bold;background-repeat: no-repeat;background-position: center;background-size: 70%;background-color: transparent}
+.tableAdmin .btnEdit{background-image: url(../images/icons/Edit2.png)}
+.tableAdmin .btnDelete{background-image: url(../images/icons/Delete2.png)}
+
+#tabClient .selected ,#tabChefs .selected,#tabGest .selected ,#tabMagas .selected,#tabAdmin .selected ,#tabServices .selected{background-color: #226aa5;color: white;}
+
+
+
+
+
+
+/*--------------------Dialog Delete-----------------------*/
+
+.dialog-delete{z-index: 50;position: fixed;left: 0;top: 0;height: 100%;width: 100%; background-color: rgba(0, 0, 0, 0.7);display: none;}
+.dialog-container {z-index: 50;position: relative;top: 25%;width: 325px;margin: 4em auto;background: #FFF;text-align: center;border-radius: 2px;overflow: hidden;padding: 7px;padding-top: 0px}
+.hideDelete{text-align: right;}
+.hideDelete button{background: none;border: none;font-weight: bold;font-size: 140%;cursor: pointer;color: #0489B1;padding: 0px}
+.dialog-container h4 {}
+.DeleteBtn{}
+.DeleteBtn button{width: 140px;border: none;color: white;background-color: aqua;margin: 5px;padding: 15px;background-color: #69b2f7 ;cursor: pointer;font-weight: bold;}
+.DeleteBtn button:hover{background-color: #0489B1}
+
+
+
+
+/*-------------------- Dialog Ajouter and modifier-----------------------*/
+
+.AJT-MDF{z-index: 50;position: fixed;left: 0;top: 0;height: 100%;width: 100%; background-color: rgba(255, 255, 255, 0.8);display: none;overflow: auto}
+.AJT-MDF fieldset{background-color: white;border:2px solid #69b2f7;padding:15px;padding-bottom: 5px;padding-top: 15px;width:350px;margin:20px auto;border-radius :4px;}
+.AJT-MDF legend{background-color: #69b2f7;color: white;border:2px solid #69b2f7;padding:5px;border-radius :2px;font-size: 110% ;font-weight: bold}
+.AJT-MDF input[type="text"],.AJT-MDF input[type="number"]{padding:5px; width:100%;border-radius: 3px;font-weight: bold;font-size: 95%;margin-top: 5px;border: 2px solid #7ec5da}
+.AJT-MDF select {background-color: #7ec5da;color: white;padding:5px; width:100%;border-radius: 3px;font-weight: bold;font-size: 95%;margin-top: 5px;}
+.AJT-MDF select option {background-color: #1f4467;color: white;padding: 5px; font-weight: bold}
+
+.AJT-MDF fieldset > div>div{}
+.AJT-MDF fieldset > div>div+div{}
+.AJT-MDF fieldset > div{margin: auto;padding: 5px}
+.AJT-MDF label{width: 100%}
+.AJT-MDF fieldset > div>div>label{font-size: 115%;white-space:nowrap;color: #69b2f7;font-weight: bold}
+
+.AN,.OK{border: none;border-radius: 1px;background-color: #69b2f7;color: white;font-size: 140%;width: 49%;font-weight: bold;cursor: pointer;margin: 0px;margin-top: 20px;margin-bottom: 10px}
+.AN:hover,.OK:hover{background-color:#2066a9}
+.LGaction{text-align: center;}
+
+
+
+
+.AJT-MDF fieldset .Eroor{border: 2px solid red;}
+
+
+
+
+
+
+
+
+/*mobile phones: */
+.menu,.contain,.info {width: 100%;}
+.contain{}
+
+@media only screen and (min-width: 600px) {
+  /*tablets: */
+.menu {width: 25%;}
+.contain {width: 75%;}
+.info {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /*desktop: */
+.col-3,.menu,.info {width: 25%;}
+.contain {width: 50%;}
+}
+
+@media only screen and (max-width: 500px) {
+  /* mobile phones: */
+    .tabcontent{zoom:90%}
+    
+}
+
+
+::-webkit-scrollbar {width: 10px;height: 10px;}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+
+::-webkit-scrollbar-thumb {background: #0489B1;}
+
+::-webkit-scrollbar-thumb:hover {background: #83bcf3;} 
+
+
+
+
+
+
+
+
+
+
